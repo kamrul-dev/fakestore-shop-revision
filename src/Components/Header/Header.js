@@ -6,7 +6,7 @@ const Header = () => {
         <header className='container'>
             <Navbar bg="light" expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                    <Navbar.Brand href="#">Fake Store Shop</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -15,8 +15,8 @@ const Header = () => {
                             navbarScroll
                         >
                             <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">Link</Nav.Link>
-                            <NavDropdown title="Link" id="navbarScrollingDropdown">
+                            <Nav.Link href="#action2">About</Nav.Link>
+                            <NavDropdown title="Category" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                                 <NavDropdown.Divider />
@@ -24,8 +24,8 @@ const Header = () => {
                                     Something else here
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#" disabled>
-                                Link
+                            <Nav.Link href="#">
+                                Cart <sup>0</sup>
                             </Nav.Link>
                         </Nav>
                         <Form className="d-flex">

@@ -11,7 +11,7 @@ const Products = () => {
             .then(data => setProducts(data))
     }, [])
     return (
-        <div>
+        <div className='container'>
             <h1>Fakestore api</h1>
             <div className='row'>
                 {
