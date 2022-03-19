@@ -13,12 +13,14 @@ const Products = () => {
     return (
         <div>
             <h1>Fakestore api</h1>
-            {
-                products.map(product => <Product
-                    product={product}
-                    key={product.id}
-                ></Product>)
-            }
+            <div className='row'>
+                {
+                    products.map(product => <Product
+                        product={product}
+                        key={product.id}
+                    ></Product>)
+                }
+            </div>
         </div>
     );
 };
