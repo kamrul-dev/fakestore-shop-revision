@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Product from '../Product/Product';
 
 // products component and data load from this component
 const Products = () => {
@@ -12,6 +13,12 @@ const Products = () => {
     return (
         <div>
             <h1>Fakestore api</h1>
+            {
+                products.map(product => <Product
+                    product={product}
+                    key={product.id}
+                ></Product>)
+            }
         </div>
     );
 };
