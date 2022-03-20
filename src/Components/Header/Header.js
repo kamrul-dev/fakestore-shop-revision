@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Container, Form, FormControl, Nav, Navbar, NavDropdown,} from 'react-bootstrap';
 
-const Header = () => {
+const Header = (props) => {
+    const {cart} = props;
     return (
         <header className='container'>
             <Navbar bg="light" expand="lg">
@@ -24,8 +25,8 @@ const Header = () => {
                                     Something else here
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#">
-                                Cart <sup>0</sup>
+                            <Nav.Link href="#" className='bg bg-warning rounded'>
+                                Cart <sup>{cart}</sup>
                             </Nav.Link>
                         </Nav>
                         <Form className="d-flex">
