@@ -1,6 +1,7 @@
 import React from 'react';
 import './Product.css'
 
+// single product component
 const Product = (props) => {
     const { image, title, price, description } = props.product;
     const {addToCart} = props;
